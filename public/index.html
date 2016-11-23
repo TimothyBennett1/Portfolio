@@ -1,19 +1,36 @@
 <!DOCTYPE html>
 <html ng-app="portfolioApp">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-    <link rel="stylesheet" href="./css/reset.css" media="screen" title="no title">
-    <link rel="stylesheet" href="./css/style.css" media="screen" title="no title">
-    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Timothy Bennett</title>
-  </head>
-  <body ng-controller="portfolioCtrl">
-    <div ui-view class="view"></div>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <link rel="stylesheet" href="./css/reset.css" media="screen" title="no title">
+        <link rel="stylesheet" href="./css/style.css" media="screen" title="no title">
+        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <title>Timothy Bennett</title>
+    </head>
+    <body ng-controller="portfolioCtrl">
+        <div class="head">
+            <img ui-sref="home" src="./images/Logo.png" />
+            <nav>
+                <a ui-sref="about">About</a>
+                <a ui-sref="projects">Projects</a>
+                <a ui-sref="tech">Tech</a>
+                <a ui-sref="contact">Contact</a>
+            </nav>
+            <i ng-if="!open" class="material-icons" ng-click="openNav()">menu</i>
+            <i ng-if="open" class="material-icons" ng-click="closeNav()">close</i>
+            <nav id="small-nav">
+              <a ui-sref="about">About</a>
+              <a ui-sref="projects">Projects</a>
+              <a ui-sref="tech">Tech</a>
+              <a ui-sref="contact">Contact</a>
+            </nav>
+        </div>
+        <div ui-view class="view"></div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js" charset="utf-8"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.js" charset="utf-8"></script>
-    <script src="./js/portfolioApp.js" charset="utf-8"></script>
-    <script src="./js/portfolioCtrl.js" charset="utf-8"></script>
-  </body>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js" charset="utf-8"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.js" charset="utf-8"></script>
+        <script src="./js/portfolioApp.js" charset="utf-8"></script>
+        <script src="./js/portfolioCtrl.js" charset="utf-8"></script>
+    </body>
 </html>
