@@ -19,11 +19,6 @@ angular.module('portfolioApp', ['ui.router'])
         templateUrl: './js/features/About/about-Tmpl.html',
         controller: 'portfolioCtrl'
       })
-      .state('contact', {
-        url: '/contact',
-        templateUrl: './js/features/Contact/contact-Tmpl.html',
-        controller: 'portfolioCtrl'
-      })
       .state('tech', {
         url: '/technologies',
         templateUrl: './js/features/Tech/tech-Tmpl.html',
