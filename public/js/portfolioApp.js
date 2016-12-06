@@ -2,21 +2,15 @@ angular.module('portfolioApp', ['ui.router'])
   .config(function($urlRouterProvider, $stateProvider) {
 
     $urlRouterProvider.otherwise('home')
-
     $stateProvider
       .state('home', {
         url: '/home',
         templateUrl: './js/features/Home/home-Tmpl.html',
-        controller: 'portfolioCtrl'
+        controller: 'portfolioCtrl',
       })
-      .state('projects', {
-        url: '/projects',
-        templateUrl: './js/features/Projects/project-Tmpl.html',
-        controller: 'portfolioCtrl'
-      })
-      .state('about', {
-        url: '/about',
-        templateUrl: './js/features/About/about-Tmpl.html',
+      .state('work', {
+        url: '/work',
+        templateUrl: './js/features/Work/work-Tmpl.html',
         controller: 'portfolioCtrl'
       })
       .state('tech', {
@@ -24,4 +18,5 @@ angular.module('portfolioApp', ['ui.router'])
         templateUrl: './js/features/Tech/tech-Tmpl.html',
         controller: 'portfolioCtrl'
       })
+
   })

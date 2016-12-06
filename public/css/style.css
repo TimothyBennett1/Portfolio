@@ -1,48 +1,46 @@
 body {
-    background-color: hsla(333, 21%, 92%, 1);
+    background-color: #5E503F;
     font-family: 'Libre Baskerville', serif;
 }
 
 .head {
     align-items: center;
     display: flex;
-    height: 25vh;
+    height: 10vh;
     justify-content: space-between;
     width: 100%;
     position: fixed;
 }
-
-.head img {
-    margin-left: 1vh;
-    margin-top: 1vh;
-    width: 25vh;
+.head svg {
+    width: 10vh;
+    margin-left: 3vh;
+    height: 10vh;
 }
 
-.head nav {
+.large-nav {
     display: none;
 }
 
 .head i {
-    align-self: flex-start;
-    font-size: 3rem;
-    margin-top: 3vh;
+    font-size: 2rem;
     margin-right: 4vh;
+    color: #ffffff;
 }
 
 #small-nav {
+    display: flex;
     align-items: flex-end;
-    background-color: hsla(333, 21%, 92%, 0);
-    display: none;
     flex-direction: column;
-    height: 40vh;
+    height: 100%;
+    background-color: hsla(333, 21%, 92%, 1);
     justify-content: space-around;
-    margin-top: 25vh;
-    position: absolute;
-    width: 100%;
+    float: right;
+    width: 0;
+    z-index: 1000;
 }
 
 #small-nav a {
-    color: hsla(0, 0%, 0%, 1);
+    color: #ffffff;
     font-size: 1.5rem;
     font-weight: bold;
     padding: 5px;
@@ -56,14 +54,57 @@ body {
 
 /*Home*/
 
-.home-container {
+.home-head {
     align-items: center;
-    background: url("./../images/Background12.png") center / 220vh no-repeat;
+    background: url('./../images/background.png') left center;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     height: 100vh;
-    width: 100%;
+}
+.home-content {
+  width: 90%;
+  margin: 0 auto;
+  height: 100vh;
+}
+.content-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5vh;
+    height: 20vh;
+}
+.content-head h1 {
+    font-family: 'Playball', cursive;
+    font-size: 3rem;
+    margin-top: 5vh;
+}
+.content-about {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin: 0 auto;
+}
+.content-about p a {
+    color: hsla(0, 0%, 0%, 1);
+    font-style: oblique;
+}
+.content-about p a:hover {
+    color: hsla(14, 84%, 53%, 1);
+}
+.down-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.down-page img {
+    width: 12vh;
+}
+.down-page i {
+    font-size: 2rem;
+    color: hsla(0, 0%, 100%, 1);
 }
 
 /*About*/
@@ -162,7 +203,7 @@ body {
 
 @media (min-width: 700px) and (max-width: 1023px) {
     body {
-        background-color: hsla(333, 21%, 92%, 1);
+        background-color: #5E503F;
         font-family: 'Libre Baskerville', serif;
     }
     .head {
@@ -172,13 +213,6 @@ body {
         justify-content: space-between;
         position: fixed;
         width: 100%;
-    }
-    .head img {
-        margin-left: 2vh;
-        width: 35vh;
-    }
-    .head nav {
-        display: none;
     }
     .head nav a {
         border-bottom: 5px solid hsla(0, 0%, 0%, 0);
@@ -198,7 +232,6 @@ body {
     /*Home*/
     .home-container {
         align-items: center;
-        background: url("./../images/Background12.png") center / 220vh no-repeat;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -214,7 +247,7 @@ body {
         width: 80%;
     }
     .description {
-      font-size: 2rem;
+        font-size: 2rem;
         margin-top: 35vh;
     }
     .contact {
@@ -286,42 +319,70 @@ body {
 
 @media (min-width: 1024px) {
     body {
-        background-color: hsla(333, 21%, 92%, 1);
+        background-color: hsla(33, 20%, 31%, 0.8);
         font-family: 'Libre Baskerville', serif;
     }
     .head {
+        align-items: center;
+        background: transparent;
         display: flex;
         justify-content: space-between;
-        height: 30vh;
-        position: absolute;
+        height: 10vh;
+        position: fixed;
         width: 100%;
     }
-    .head img {
-        margin-left: 2vh;
-        margin-top: 2vh;
-        width: 35vh;
+    .head svg {
+      width: 10vh;
+      margin-left: 3vh;
     }
-    .head nav {
+    .a {
+      stroke-width:1px;
+      stroke:#ffffff;
+      width: 10px;
+      height: 10px;
+      fill: #ffffff;
+      }
+    #moustache {
+        width: 10vh;
+        height: 10vh;
+    }
+    .large-nav {
         align-items: center;
-        align-self: flex-start;
         display: flex;
         justify-content: space-around;
-        margin-right: 2vh;
-        margin-top: 5vh;
+        width: 30vh;
     }
-    .head nav a {
-        border-bottom: 5px solid hsla(0, 0%, 0%, 0);
-        color: hsla(0, 0%, 0%, 1);
-        font-size: 1.5rem;
-        margin-left: 10px;
-        margin-right: 10px;
+    .large-nav a {
+        border-bottom: 2px solid hsla(0, 0%, 0%, 0);
+        color: hsla(0, 0%, 100%, 1);
+        font-size: 1rem;
+        margin-left: 1vh;
+        margin-right: 1vh;
+        padding-bottom: 1vh;
         text-decoration: none;
     }
-    .head nav a:hover {
-        border-bottom: 5px solid hsla(10, 94%, 60%, 1);
+    .large-nav a:hover {
+        border-bottom: 2px solid hsla(14, 84%, 53%, 1);
     }
-    .head nav img {
-        width: 15%;
+    .large-nav img {
+        height: 3vh;
+        margin: 0;
+        margin-bottom: 1.5vh;
+        opacity: 0.6;
+        padding: 0;
+        width: 3vh;
+    }
+    .large-nav img:hover {
+        opacity: 1;
+    }
+    .darksvg {
+      fill: #000000;
+    }
+    .dark a{
+      color: #000000;
+    }
+    #small-nav {
+        display: none;
     }
     .head i {
         display: none;
@@ -330,32 +391,62 @@ body {
         width: 100%;
     }
     /*Home*/
-    .home-container {
-        background: url("./../images/Background12.png") no-repeat;
+    .home-head {
+        align-items: center;
+        background: url('./../images/background.png');
         background-size: cover;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
         height: 100vh;
-        width: 100%;
-    }
-    .home-container img {
-        height: auto;
-        width: 20%;
     }
     .down-page {
-        align-self: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .down-page img {
+        width: 12vh;
+    }
+
+    .down-page i {
+        font-size: 2rem;
+        color: hsla(0, 0%, 100%, 1);
+    }
+    .home-content {
         align-items: center;
         display: flex;
         flex-direction: column;
-        width: 10%;
+        height: 100vh;
+        justify-content: space-around;
+        margin: 0 auto;
+        width: 50%;
     }
-    .down-page img {
-        height: auto;
-        width: 80%;
+    .content-head {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 5vh;
+        height: 20vh;
     }
-    .down-page i {
-        font-size: 3em;
+    .content-head h1 {
+        font-family: 'Playball', cursive;
+        font-size: 7rem;
+        margin-top: 5vh;
+    }
+    .content-about {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        margin: 0 auto;
+    }
+    .content-about p a {
+        color: hsla(0, 0%, 0%, 1);
+        font-style: oblique;
+    }
+    .content-about p a:hover {
+        color: hsla(14, 84%, 53%, 1);
     }
     /*About*/
     .about {
@@ -379,38 +470,18 @@ body {
     }
     /*Projects*/
     .project-container {
-        align-content: center;
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-        justify-content: space-between;
-        width: 100%;
+        width: 75%;
+        margin: 0 auto;
     }
     .projects {
-        align-items: center;
-        display: flex;
-        justify-content: space-around;
-        margin-top: 35vh;
-        width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
     }
-    .project {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        height: 40vh;
-        width: 50vh;
-    }
-    .project-image img {
-      height: 20vh;
-    }
-    .project-heading a {
-        color: hsla(10, 94%, 60%, 1);
-        font-size: 2rem;
-        text-decoration: none;
-    }
-    .project-description {
-        line-height: 1.5rem;
+    .project-image a img {
+      margin-bottom: 10vh;
+      width: 95%;
     }
     /*Tech*/
     .tech-container {
