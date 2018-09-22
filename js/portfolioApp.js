@@ -5,7 +5,6 @@ angular.module('portfolioApp', ['ui.router', 'headroom'])
     
     $locationProvider.html5Mode({
       enabled: true,
-      requireBase: false
     });
 
     $stateProvider
