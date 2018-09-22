@@ -1,8 +1,10 @@
 angular.module('portfolioApp', ['ui.router', 'headroom'])
-  .config(function($urlRouterProvider, $stateProvider) {
-    console.log(Headroom.options);
+  .config(function($urlRouterProvider, $locationProvider, $stateProvider) {
+    
     $urlRouterProvider.otherwise('home')
-    console.log();
+    
+    $locationProvider.html5Mode(true);
+
     $stateProvider
       .state('home', {
         url: '/home',
