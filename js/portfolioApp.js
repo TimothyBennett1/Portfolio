@@ -3,7 +3,10 @@ angular.module('portfolioApp', ['ui.router', 'headroom'])
     
     $urlRouterProvider.otherwise('home')
     
-    $locationProvider.html5Mode(true);
+    $locationProvider.html5Mode({
+      enabled: true,
+      requireBase: false
+    });
 
     $stateProvider
       .state('home', {
