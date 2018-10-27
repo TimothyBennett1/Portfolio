@@ -1,24 +1,36 @@
-<!DOCTYPE html>
-<html ng-app="portfolioApp">
-    <head>
-        <base href="/Portfolio/">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-        <link rel="stylesheet" href="./css/reset.css" media="screen" title="no title">
-        <link rel="stylesheet" href="./css/style.css" media="screen" title="no title">
-        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Playball" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <title>Timothy Bennett</title>
-    </head>
-    <body id="body" ng-controller="portfolioCtrl">
-        <header headroom></header>
-        <div ui-view class="view"></div>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js" charset="utf-8"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.js" charset="utf-8"></script>
-        <script src="https://use.fontawesome.com/2b40c75668.js"></script>
-        <script src="./node_modules/headroom.js/dist/headroom.js" charset="utf-8"></script>
-        <script src="./node_modules/headroom.js/dist/angular.headroom.js" charset="utf-8"></script>
-        <script src="./js/portfolioApp.js" charset="utf-8"></script>
-        <script src="./js/portfolioCtrl.js" charset="utf-8"></script>
-    </body>
-</html>
+<script>
+    (function ($) {
+        $(window).load(function () {
+            $(".hero .entry-content-wrapper").append(
+                '<div class="green-hero-accent"></div>'
+            );
+
+            function greenAccentHeight() {
+                var greenAccentHeight =
+                    $("#av_section_1").height() - (($("#av_section_1").height() - $("#av_section_1 .entry-content-wrapper").height()) / 2) +
+                    parseInt($("#av_section_2 .template-page").css("padding-top"), 10) +
+                    $("#av_section_2 .entry-content-wrapper .flex_column_table .flex_column:first-child").height() +
+                    120;
+
+                if ($(window).width() < 767) {
+                    greenAccentHeight = greenAccentHeight - 30;
+                }
+
+                $(".green-hero-accent").height(greenAccentHeight);
+            }
+
+            var subtext = $('.hero .lp-hero-subtext').detach();
+            $('.hero .container').append(subtext);
+
+            greenAccentHeight();
+            $(window).resize(function () {
+                greenAccentHeight();
+            });
+
+            $('#support-button').on('click', function () {
+                $('button-container').hide();
+                $('iframe-container').hide();
+            })
+        });
+    })(jQuery)
+</script>
