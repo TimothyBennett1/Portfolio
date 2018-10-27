@@ -119,6 +119,11 @@ body {
 .home-content-about p a:hover {
     color: hsla(14, 84%, 53%, 1);
 }
+
+.profile-image {
+    border-radius: 350px;
+}
+
 /*Work*/
 .project-container {
   display: flex;
