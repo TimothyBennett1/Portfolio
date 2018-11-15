@@ -23,6 +23,11 @@ angular.module('portfolioApp', ['ui.router', 'headroom'])
         templateUrl: './js/features/Tech/tech-Tmpl.html',
         controller: 'portfolioCtrl'
       })
+      .state('res', {
+        url: '/resume',
+        templateUrl: './features/Resume/Resume.html',
+        controller: 'portfolioCtrl'
+      })
   })
   .directive('header', ($rootScope) => {
     return {
