@@ -25,7 +25,7 @@ angular.module('portfolioApp', ['ui.router', 'headroom'])
       })
       .state('res', {
         url: '/resume',
-        templateUrl: './features/Resume/Resume.html',
+        templateUrl: './js/features/Resume/Resume.html',
         controller: 'portfolioCtrl'
       })
   })
