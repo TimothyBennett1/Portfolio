@@ -583,6 +583,47 @@ body {
       transform: scale(0.9);
       transition: all 0.5s ease-out;
     }
+    /*Resume*/
+    .resume-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+        margin: 0 auto;
+      }
+      .resume-head {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5vh;
+        margin-top: 25vh;
+        text-align: center;
+      }
+      .resume-head h1 {
+        font-size: 6vh;
+        margin-bottom: 3vh;
+      }
+      .resume-head p {
+        font-size: 3vh;
+        margin-bottom: 3vh;
+      }
+      .resume {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 25vh;
+      }
+      .resume {
+        width: 55vh;
+      }
+      .resume a img {
+        width: 55vh;
+      }
+      .resume a img:hover {
+        transform: scale(0.9);
+        transition: all 0.5s ease-out;
+      }
     /*Tech*/
     .tech-container {
         align-items: center;
