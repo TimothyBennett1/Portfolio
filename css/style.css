@@ -528,7 +528,7 @@ body {
     .headroom--top {
         transform: translateY(0%);
     }
-    .headroom--bottom {}
+
     #moustache {
         width: 10vh;
         height: 10vh;
@@ -538,7 +538,7 @@ body {
         display: flex;
         justify-content: space-around;
         margin-right: 2vh;
-        width: 30vh;
+        width: 45vh;
     }
     .large-nav a {
         border-bottom: 2px solid hsla(0, 0%, 0%, 0);
