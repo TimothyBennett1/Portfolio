@@ -2,6 +2,7 @@ body {
     background-color: hsla(55, 19%, 77%, 1);
     font-family: 'Libre Baskerville', serif;
 }
+
 .headroom {
     align-items: center;
     background: transparent;
@@ -13,11 +14,13 @@ body {
     will-change: transform;
     transition: transform 200ms linear;
 }
+
 .headroom svg {
     width: 10vh;
     height: 10vh;
     margin-left: 3vh;
 }
+
 .a {
     stroke-width: 1px;
     stroke: hsla(0, 0%, 100%, 1);
@@ -25,54 +28,68 @@ body {
     height: 10px;
     fill: hsla(0, 0%, 100%, 1);
 }
+
 .headroom--pinned {
     transform: translateY(0%);
     transition-delay: 0.2s;
 }
+
 .headroom--unpinned {
     transform: translateY(-100%);
 }
+
 .headroom--top {
-  transform: translateY(0%);
+    transform: translateY(0%);
 }
-.headroom--bottom {
-}
+
+.headroom--bottom {}
+
 #moustache {
     width: 10vh;
     height: 10vh;
 }
+
 .large-nav {
     display: none;
 }
+
 .darksvg {
-  stroke-width: 1px;
-  stroke: hsla(0, 0%, 0%, 1);
-  fill: hsla(0, 0%, 0%, 1);
+    stroke-width: 1px;
+    stroke: hsla(0, 0%, 0%, 1);
+    fill: hsla(0, 0%, 0%, 1);
 }
+
 .small-nav {
     display: none;
     justify-content: space-between;
     width: 20vh;
     margin-left: 25vh;
 }
+
 .small-nav a {
-  text-decoration: none;
-  color: hsla(0, 0%, 100%, 1);
+    text-decoration: none;
+    color: hsla(0, 0%, 100%, 1);
 }
+
 .small-nav-icon i {
-  color: hsla(0, 0%, 100%, 1);
-  margin-right: 2vh;
+    color: hsla(0, 0%, 100%, 1);
+    margin-right: 2vh;
 }
+
 .dark a {
-  color: hsla(0, 0%, 0%, 1);
+    color: hsla(0, 0%, 0%, 1);
 }
+
 .dark i {
-  color: hsla(0, 0%, 0%, 1);
+    color: hsla(0, 0%, 0%, 1);
 }
+
 .view {
     width: 100%;
 }
+
 /*Home*/
+
 .home-head {
     align-items: center;
     background: url('./../images/background.png');
@@ -82,6 +99,7 @@ body {
     justify-content: flex-end;
     height: 100vh;
 }
+
 .home-content {
     align-items: center;
     display: flex;
@@ -92,6 +110,7 @@ body {
     width: 80%;
     margin: 0 auto;
 }
+
 .home-content-head {
     display: flex;
     flex-direction: column;
@@ -99,23 +118,28 @@ body {
     justify-content: space-between;
     margin-top: 5vh;
 }
+
 .home-content-head h1 {
     font-family: 'Playball', cursive;
     font-size: 2rem;
 }
+
 .home-content-head span {
-  font-size: 2rem;
-  font-family: 'Playball', cursive;
+    font-size: 2rem;
+    font-family: 'Playball', cursive;
 }
+
 .home-content-about {
     font-size: 1rem;
     line-height: 1.5rem;
     margin: 0 auto;
 }
+
 .home-content-about p a {
     color: hsla(0, 0%, 0%, 1);
     font-style: oblique;
 }
+
 .home-content-about p a:hover {
     color: hsla(14, 84%, 53%, 1);
 }
@@ -125,47 +149,57 @@ body {
 }
 
 /*Work*/
+
 .project-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  width: 95%;
-  margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
 }
+
 .projects-head {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 5vh;
-  margin-top: 15vh;
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5vh;
+    margin-top: 15vh;
+    text-align: center;
 }
+
 .projects-head h1 {
-  font-size: 6vh;
-  margin-bottom: 3vh;
+    font-size: 6vh;
+    margin-bottom: 3vh;
 }
+
 .projects-head p {
-  font-size: 3vh;
-  margin-bottom: 3vh;
+    font-size: 3vh;
+    margin-bottom: 3vh;
 }
+
 .projects {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-  margin-bottom: 15vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 15vh;
 }
+
 .project {
-  width: 95%;
+    width: 95%;
 }
+
 .project a img {
-  width: 50vh;
+    width: 50vh;
 }
+
 .project a img:hover {
-  transform: scale(0.9);
-  transition: all 0.5s ease-out;
+    transform: scale(0.9);
+    transition: all 0.5s ease-out;
 }
+
 /*Tech*/
+
 .tech-container {
     align-items: center;
     display: flex;
@@ -174,6 +208,7 @@ body {
     height: 100vh;
     width: 100%;
 }
+
 .techs {
     height: 80vh;
     display: flex;
@@ -183,6 +218,7 @@ body {
     margin-top: 20vh;
     width: 60%;
 }
+
 .tech {
     display: flex;
     flex-direction: column;
@@ -190,14 +226,65 @@ body {
     align-items: center;
     width: 25vh;
 }
+
 .tech img {
     width: 20vh;
 }
 
+/*Goals*/
+
+.goals-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.goals-head {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5vh;
+    margin-top: 15vh;
+    text-align: center;
+}
+
+.goals-head h1 {
+    font-size: 6vh;
+    margin-bottom: 3vh;
+}
+
+.goals-head p {
+    font-size: 3vh;
+    margin-bottom: 3vh;
+}
+
+.goals {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 15vh;
+}
+
+.goals {
+    width: 95%;
+}
+
+.goals a img {
+    width: 50vh;
+}
+
+.goals a img:hover {
+    transform: scale(0.9);
+    transition: all 0.5s ease-out;
+}
 
 @media (min-width: 700px) and (max-width: 1022px) {
     body {
-        background-color: hsla(55, 19%, 77%, 1);;
+        background-color: hsla(55, 19%, 77%, 1);
+        ;
         font-family: 'Libre Baskerville', serif;
     }
     .headroom {
@@ -230,10 +317,10 @@ body {
         transform: translateY(-100%);
     }
     .headroom--top {
-      transform: translateY(0%);
+        transform: translateY(0%);
     }
     .headroom--bottom {
-      transform: translateY(0%);
+        transform: translateY(0%);
     }
     #moustache {
         width: 10vh;
@@ -265,18 +352,18 @@ body {
         color: hsla(0, 0%, 100%, 1);
     }
     .large-nav i:hover {
-      opacity: 1;
+        opacity: 1;
     }
     .darksvg {
-      stroke-width: 1px;
-      stroke: hsla(0, 0%, 0%, 1);
-      fill: hsla(0, 0%, 0%, 1);
+        stroke-width: 1px;
+        stroke: hsla(0, 0%, 0%, 1);
+        fill: hsla(0, 0%, 0%, 1);
     }
     .dark a {
         color: hsla(0, 0%, 0%, 1);
     }
     .dark i {
-      color: hsla(0, 0%, 0%, 1);
+        color: hsla(0, 0%, 0%, 1);
     }
     .small-nav {
         display: none;
@@ -319,8 +406,8 @@ body {
         font-size: 4rem;
     }
     .home-content-head span {
-      font-size: 3rem;
-      font-family: 'Playball', cursive;
+        font-size: 3rem;
+        font-family: 'Playball', cursive;
     }
     .home-content-about {
         font-size: 1rem;
@@ -336,44 +423,44 @@ body {
     }
     /*Work*/
     .project-container {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-      width: 95%;
-      margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+        margin: 0 auto;
     }
     .projects-head {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 5vh;
-      margin-top: 20vh;
-      text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5vh;
+        margin-top: 20vh;
+        text-align: center;
     }
     .projects-head h1 {
-      font-size: 6vh;
-      margin-bottom: 3vh;
+        font-size: 6vh;
+        margin-bottom: 3vh;
     }
     .projects-head p {
-      font-size: 3vh;
-      margin-bottom: 3vh;
+        font-size: 3vh;
+        margin-bottom: 3vh;
     }
     .projects {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      align-items: center;
-      margin-bottom: 25vh;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 25vh;
     }
     .project {
-      width: 55vh;
+        width: 55vh;
     }
     .project a img {
-      width: 55vh;
+        width: 55vh;
     }
     .project a img:hover {
-      transform: scale(0.9);
-      transition: all 0.5s ease-out;
+        transform: scale(0.9);
+        transition: all 0.5s ease-out;
     }
     /*Tech*/
     .tech-container {
@@ -439,10 +526,9 @@ body {
         transform: translateY(-100%);
     }
     .headroom--top {
-      transform: translateY(0%);
+        transform: translateY(0%);
     }
-    .headroom--bottom {
-    }
+    .headroom--bottom {}
     #moustache {
         width: 10vh;
         height: 10vh;
@@ -473,18 +559,18 @@ body {
         color: hsla(0, 0%, 100%, 1);
     }
     .large-nav i:hover {
-      opacity: 1;
+        opacity: 1;
     }
     .darksvg {
-      stroke-width: 1px;
-      stroke: hsla(0, 0%, 0%, 1);
-      fill: hsla(0, 0%, 0%, 1);
+        stroke-width: 1px;
+        stroke: hsla(0, 0%, 0%, 1);
+        fill: hsla(0, 0%, 0%, 1);
     }
     .dark a {
         color: hsla(0, 0%, 0%, 1);
     }
     .dark i {
-      color: hsla(0, 0%, 0%, 1);
+        color: hsla(0, 0%, 0%, 1);
     }
     .small-nav {
         display: none;
@@ -527,8 +613,8 @@ body {
         font-size: 6rem;
     }
     .home-content-head span {
-      font-size: 5rem;
-      font-family: 'Playball', cursive;
+        font-size: 5rem;
+        font-family: 'Playball', cursive;
     }
     .home-content-about {
         font-size: 1.5rem;
@@ -544,44 +630,44 @@ body {
     }
     /*Projects*/
     .project-container {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-      width: 95%;
-      margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+        margin: 0 auto;
     }
     .projects-head {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 5vh;
-      margin-top: 25vh;
-      text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5vh;
+        margin-top: 25vh;
+        text-align: center;
     }
     .projects-head h1 {
-      font-size: 6vh;
-      margin-bottom: 3vh;
+        font-size: 6vh;
+        margin-bottom: 3vh;
     }
     .projects-head p {
-      font-size: 3vh;
-      margin-bottom: 3vh;
+        font-size: 3vh;
+        margin-bottom: 3vh;
     }
     .projects {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      align-items: center;
-      margin-bottom: 25vh;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 25vh;
     }
     .project {
-      width: 55vh;
+        width: 55vh;
     }
     .project a img {
-      width: 55vh;
+        width: 55vh;
     }
     .project a img:hover {
-      transform: scale(0.9);
-      transition: all 0.5s ease-out;
+        transform: scale(0.9);
+        transition: all 0.5s ease-out;
     }
     /*Resume*/
     .resume-container {
@@ -591,39 +677,39 @@ body {
         align-items: center;
         width: 95%;
         margin: 0 auto;
-      }
-      .resume-head {
+    }
+    .resume-head {
         display: flex;
         flex-direction: column;
         margin-bottom: 5vh;
         margin-top: 25vh;
         text-align: center;
-      }
-      .resume-head h1 {
+    }
+    .resume-head h1 {
         font-size: 6vh;
         margin-bottom: 3vh;
-      }
-      .resume-head p {
+    }
+    .resume-head p {
         font-size: 3vh;
         margin-bottom: 3vh;
-      }
-      .resume {
+    }
+    .resume {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         align-items: center;
         margin-bottom: 25vh;
-      }
-      .resume {
+    }
+    .resume {
         width: 55vh;
-      }
-      .resume a img {
+    }
+    .resume a img {
         width: 55vh;
-      }
-      .resume a img:hover {
+    }
+    .resume a img:hover {
         transform: scale(0.9);
         transition: all 0.5s ease-out;
-      }
+    }
     /*Tech*/
     .tech-container {
         align-items: center;
@@ -653,6 +739,5 @@ body {
         width: 25vh;
     }
 }
-
 
 /*Animations*/
