@@ -242,7 +242,7 @@ body {
     margin: 0 auto;
 }
 
-.goals-head {
+.goals-content-head {
     display: flex;
     flex-direction: column;
     margin-bottom: 5vh;
@@ -250,35 +250,19 @@ body {
     text-align: center;
 }
 
-.goals-head h1 {
+.goals-content-head h1 {
     font-size: 6vh;
     margin-bottom: 3vh;
 }
 
-.goals-head p {
+.goals-content-head p {
     font-size: 3vh;
     margin-bottom: 3vh;
 }
 
-.goals {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-bottom: 15vh;
-}
-
-.goals {
-    width: 95%;
-}
-
-.goals a img {
-    width: 50vh;
-}
-
-.goals a img:hover {
-    transform: scale(0.9);
-    transition: all 0.5s ease-out;
+.goals-content ul {
+    list-style: disc;
+    font-size: 20px;
 }
 
 @media (min-width: 700px) and (max-width: 1022px) {
