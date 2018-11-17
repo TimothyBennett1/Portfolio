@@ -28,7 +28,7 @@ angular.module('portfolioApp', ['ui.router', 'headroom'])
         templateUrl: './js/features/Resume/Resume.html',
         controller: 'portfolioCtrl'
       })
-      .state('goal', {
+      .state('goals', {
         url: '/goals',
         templateUrl: './js/features/Goals/goals-tmpl.html',
         controller: 'portfolioCtrl'
