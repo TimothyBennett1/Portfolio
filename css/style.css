@@ -265,6 +265,24 @@ body {
     font-size: 20px;
 }
 
+.tech-head {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5vh;
+    margin-top: 15vh;
+    text-align: center;
+}
+
+.tech-head h1 {
+    font-size: 6vh;
+    margin-bottom: 3vh;
+}
+
+.tech-head p {
+    font-size: 3vh;
+    margin-bottom: 3vh;
+}
+
 @media (min-width: 700px) and (max-width: 1022px) {
     body {
         background-color: hsla(55, 19%, 77%, 1);
